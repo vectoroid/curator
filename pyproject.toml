@@ -1,0 +1,22 @@
+[project]
+name = "curator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "tm alone", email = "tmalone@protonmail.ch" }
+]
+requires-python = ">=3.13.0"
+dependencies = [
+    "fastapi>=0.115.6",
+    "lxml-html-clean>=0.4.1",
+    "newspaper4k>=0.9.3.1",
+    "pydantic>=2.10.3",
+]
+
+[project.scripts]
+curator = "curator:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
